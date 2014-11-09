@@ -1,0 +1,1 @@
+You just used AJAX to change this content
