@@ -4,6 +4,7 @@ margin: 10px;
 width: 100px;
 min-height: 100px;
 padding: 5px;
+transition: 3s linear;
 }
 div#two {
 border: 1px solid yellow;
@@ -11,6 +12,7 @@ margin: 10px;
 width: 100px;
 min-height: 100px;
 padding: 5px;
+transition: 3s linear;
 }
 div#three {
 border: 1px solid blue;
@@ -18,6 +20,7 @@ margin: 10px;
 width: 100px;
 min-height: 100px;
 padding: 5px;
+transition: 3s linear;
 }
 div#four {
 border: 1px solid green;
@@ -25,4 +28,5 @@ margin: 10px;
 width: 100px;
 min-height: 100px;
 padding: 5px;
+transition: 3s linear;
 }

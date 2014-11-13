@@ -1,42 +1,40 @@
-
-function addItem(){
-	var count = localStorage.length;
-	var newItem = document.querySelector('[name="item"]').value;
-	console.log(newItem);
-	localStorage.setItem("Item" + count, newItem);
-	console.log("Item: " + count + "name: " + newItem);
+var peopleString = localStorage["people"];
+console.log("peopleString: " + peopleString);
+if (peopleString == undefined){
+	var peopleArray = [];
+}
+else {
+	var peopleArray = JSON.parse(peopleString);
+}
+function addThing(){
+	// var count = localStorage.length;
+	var newThing = document.querySelector('[name="thing"]').value;
+	console.log(newThing);
+	peopleArray.push(newThing);
+	console.log(peopleArray);
+	// localStorage.setItem("Item" + count, newItem);
+	// console.log("Item: " + count + "name: " + newItem);
 	var entry = document.createElement("li");
-	entry.appendChild(document.createTextNode(newItem));
-	var list = document.querySelector("#items");
+	entry.appendChild(document.createTextNode(newThing));
+	var list = document.querySelector("#things");
 	list.appendChild(entry);
+	localStorage["people"] = JSON.stringify(peopleArray);
 }
 
-function displayItems(){
-	console.log("number of items: " + localStorage.length);
-	console.log(localStorage.getItem("Item0"));
-	if (localStorage.getItem("Item1") != null){
+function displayThings(){
+	console.log("number of things: " + peopleArray.length);
 
-		for (var i = 1; i < localStorage.length; i++) {
-			var entry = document.createElement("li");
-			entry.appendChild(document.createTextNode(localStorage.getItem("Item" + [i])));
-			var list = document.querySelector("#items");
-			list.appendChild(entry);
-		};
+	for (var i = 0; i < peopleArray.length; i++) {
+		var entry = document.createElement("li");
+		entry.appendChild(document.createTextNode(peopleArray[i]));
+		var list = document.querySelector("#things");
+		list.appendChild(entry);
 	}
 }
 function removeLocalStorage(){
-	localStorage.removeItem("Item" + 0);
-	localStorage.removeItem("Item" + 1);
-	localStorage.removeItem("Item" + 2);
-	localStorage.removeItem("Item" + 3);
-	localStorage.removeItem("Item" + 4);
-	localStorage.removeItem("Item" + 5);
-	localStorage.removeItem("Item" + 6);
-	localStorage.removeItem("Item" + 7);
-	localStorage.removeItem("Item" + 8);
-	localStorage.removeItem("Item" + 9);
+	localStorage.removeItem("people"); 
 	location.reload();
 }
-window.onload = displayItems;
+window.onload = displayThings;
 
 
