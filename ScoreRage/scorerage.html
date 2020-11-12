@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+	<meta>
+	<link rel="stylesheet" type="text/css" href="css/rage.css">
+</head>
+<html>
+<body>
+	<header>
+		<h1>ScoreRage!</h1>
+	</header>
+	<main>
+		<div id="players">
+			<!-- <div class="player" id="p1">
+				<img class="ppl" src="person.png">
+				<input class="pName" type="text" name="name">
+				<img class="add" onclick="addPlayer()" src="add_person.png">
+			</div> -->
+		</div>
+		<div class="bottom">
+			<button type="button" onclick="removeLocalStorage()">New Game</button>
+			<button type="button" onclick="startGame()">Start!</button>
+		</div>
+		<div class="round">
+			<h2>Round 1</h2>
+			<div class="top">
+				<img class="ppl line-up" src="person.png">
+				<p id="roundTotal" class="line-up">Total: 0</p>
+				<img class="scores line-up" src="chart.png">
+			</div>
+			<div class="mid">
+				<div class="slider">
+					<input id ="bet-value" class="range-value" type="text" value=0 readonly>
+					<img src="dice.png">
+					<p class="range-start line-up">0</p>
+					<input id="bet" class="main-input" type="range" min=0 max=10 oninput="updateBet(value)">
+					<p class="range-end line-up">10</p>
+				</div>
+				<div class="slider">
+					<input id ="won-value" class="range-value" type="text" value=0 readonly>
+					<img src="won.png">
+					<p class="range-start line-up">0</p>
+					<input id="won" class="main-input" type="range" min=0 max=10 oninput="updateWon(value)">
+					<p class="range-end line-up">10</p>
+				</div>
+				<div class="slider">
+					<input id ="bonus-value" class="range-value" type="text" value=0 readonly>
+					<img src="award.png">
+					<p class="range-start line-up">-10</p>
+					<input id="bonus" class="main-input" type="range" step=5 min=-10 max=10 oninput="updateBonus(value)">
+					<p class="range-end line-up">10</p>
+				</div>
+			</div>
+			<div>
+				<img class="line-up" src="rewind.png">
+				<div id="sPlayers" class="line-up"></div>
+				<img class="line-up" src="fastforward.png">
+			</div>
+		</div>	
+	</main>
+	<footer>
+	</footer>
+	<script type="text/javascript" src="js/rage.js"></script>
+</body>
+</html>

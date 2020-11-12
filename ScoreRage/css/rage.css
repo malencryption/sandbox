@@ -1,0 +1,97 @@
+.pName {
+	/*float: left;*/
+	/*padding-left: 5px;*/
+	display: inline;
+}
+
+.player img {
+	/*float: left;*/
+	display: inline;
+	margin-top: 15px;
+	min-height: 45px; 
+}
+
+.player {
+	clear: both;
+	/*width: 300px;*/
+}
+
+.player p {
+	font-size: 45px;
+	/*text-align: center;*/
+	margin-left: 15px;
+	display: inline;
+	line-height: 45px;
+}
+
+#players {
+	overflow: hidden;
+}
+.player input {
+	margin-top: 15px;
+	height: 45px;
+	width: 200px;
+	font-size: 28px;
+}
+
+button {
+	display: inline;
+}
+
+.bottom {
+	margin-top: 15px;
+	margin-left: 50px;
+}
+.line-up {
+	display: inline;
+}
+
+.mid {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+
+.slider {
+	margin-top: 15px;
+}
+input.main-input {
+	width: 250px;
+}
+/*input[type='range'] {
+		-webkit-appearance: none;
+		border-radius: 5px;
+		box-shadow: inset 0 0 5px #000084;
+		background-color: #4e76b3;
+		width: 250px;
+		height: 12px;
+		vertical-align: middle;
+	}*/
+
+input[type="range"]::-webkit-slider-thumb {
+    /*-webkit-appearance: none !important;*/ 
+    /*/*opacity: 1;
+    width: 45px;
+    height: 45px;
+    border: none; 
+    /*top: 0px;
+    z-index: 99;*/
+ }
+ 
+ #bet input[type='range']::-webkit-slider-thumb {
+	background-image: url('../dice.png');
+ }
+
+ input.range-value {
+ 	width: 17px;
+ 	padding-left: 3px;
+ 	padding-right: 3px;
+ 	margin-right: 10px;
+ }
+
+ #sPlayers p {
+ 	margin-left: 10px;
+ 	min-height: 45px;
+ 	min-width: 45px; 
+ 	border: 1px solid blue;
+ }

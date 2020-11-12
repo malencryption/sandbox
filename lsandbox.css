@@ -1,0 +1,54 @@
+/*div {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+div {
+    -ms-transform: translate(50px,100px);
+   	-webkit-transform: translate(50px,100px); 
+    transform: translate(50px,100px);
+}
+*/
+div#hi {
+    width: 300px;
+    height: 100px;
+    background: red;
+    -ms-transform: 2s linear; 
+    -webkit-transform: 2s linear; 
+    /*Property, duration, timing, delay */
+    transition: 5s;
+    margin: 20px; 
+}
+/*
+div {
+    -ms-transform: scale(2,4); 
+    -webkit-transform: scale(2,4); 
+    transform: scale(2,4);
+}
+div {
+    -ms-transform: skew(30deg,20deg); 
+    -webkit-transform: skew(30deg,20deg); 
+    transform: skew(30deg,20deg);
+}*/
+/*matrix(rotate, scale, move (translate), and skew)*/
+/*div#one {
+    -ms-transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+    -webkit-transform: matrix(0.866,0.5,-0.5,0.866,0,0); 
+    transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+}
+div#small {
+    width: 10px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 4s, height 1s; 
+    transition: width 4s, height 1s;
+}
+
+div#small:hover {
+    width: 300px;
+    height:300px;
+}
+*/
